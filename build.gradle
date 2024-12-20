@@ -10,6 +10,18 @@ repositories {
 }
 
 dependencies {
+    // Kafka client dependency
+    implementation 'org.apache.kafka:kafka-clients:3.9.0'
+
+/*    // Optional: If you are using Kafka Streams
+    implementation 'org.apache.kafka:kafka-streams:3.9.0'
+
+    // Optional: If you're using Avro serialization for messages
+    implementation 'org.apache.kafka:kafka-avro-serializer:3.9.0'
+
+    // Optional: If you're using Confluent Schema Registry
+    implementation 'io.confluent:kafka-avro-serializer:7.5.0'*/
+
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
